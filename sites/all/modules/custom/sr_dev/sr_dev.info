@@ -1,0 +1,6 @@
+name = sr_dev
+core = 7.x
+version = 7.x-1.0
+description = sr_dev custom module that utilizes Drupal's preprocessor hooks to 
+make the variable $bootstrap_panel available to the page.tpl.php
+template

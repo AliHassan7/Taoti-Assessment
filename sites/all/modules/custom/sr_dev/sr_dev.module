@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * Implements hook_preprocess().
+ */
+function sr_dev_preprocess(&$variables, $hook) {
+  // Provide our .tpl.php files with a $bootstrap_panel variable
+  // which stores the output of the variable HTML().
+  $HTML = '<div class="panel panel-default">
+  <div class="panel-heading">Sr. Drupal Developer</div>
+  <div class="panel-body">Welcome to the USGS</div>
+  </div>';	
+
+  $variables['bootstrap_panel'] = $HTML;
+
+}  
