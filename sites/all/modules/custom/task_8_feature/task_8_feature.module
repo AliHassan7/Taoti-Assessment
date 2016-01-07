@@ -5,3 +5,16 @@
  */
 
 include_once 'task_8_feature.features.inc';
+
+/**
+ * Implements hook_theme_registry_alter().
+ */
+function task_8_feature_theme_registry_alter(&$theme_registry) {
+  // Override the default views_view.tpl.php with our own.
+  if (isset($theme_registry['views_view'])) {
+    $module_path = drupal_get_path('module', 'task_8_feature');
+    $theme_registry['views_view']['theme path'] = $module_path;
+    $theme_registry['views_view']['path'] = $module_path;
+    $theme_registry['views_view']['template'] = 'templates/views-view';
+  }
+}
