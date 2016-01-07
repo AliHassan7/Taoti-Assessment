@@ -1,0 +1,12 @@
+name = Task 8 Feature
+core = 7.x
+package = Features
+dependencies[] = backup_migrate
+dependencies[] = ctools
+dependencies[] = views
+features[backup_migrate_destinations][] = task_7_dump
+features[ctools][] = backup_migrate:backup_migrate_exportables:1
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[views_view][] = task_7_view
+project path = sites/all/modules/custom

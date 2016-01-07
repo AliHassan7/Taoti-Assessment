@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Task 8 Feature feature.
+ */
+
+include_once 'task_8_feature.features.inc';
